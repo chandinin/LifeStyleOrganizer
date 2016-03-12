@@ -3,4 +3,14 @@
     <string name="drawer_open">Menu opened</string>
     <string name="drawer_close">Menu closed</string>
     <string name="action_settings">Settings</string>
+    <string name="openCamera">Open Camera</string>
+
+
+   <!-- Error Toasts-->
+    <string name="error_creds_empty">Please enter login and password</string>
+    <string name="error_no_account">Do not have an account yet? Signup!</string>
+    <string name="error_invalid_username">The user name entered is incorrect</string>
+    <string name="error_invalid_password">Invalid password ! Please try again</string>
+    <string name="error_empty_fields">Please enter all the fields</string>
+    <string name="error_ummatched_password">The entered password does not match the confirm password</string>
 </resources>
