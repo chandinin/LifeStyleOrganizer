@@ -1,5 +1,9 @@
 package com.lifestyle.organizer;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerC
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private Toolbar mToolbar;
+    private Fragment fragment;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +32,12 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerC
         setSupportActionBar(mToolbar);
         this.setTitle("");
 
-        mNavigationDrawerFragment = (NavigationDrawerFragment)
-                getFragmentManager().findFragmentById(R.id.fragment_drawer);
+        mNavigationDrawerFragment = (NavigationDrawerFragment)getFragmentManager().findFragmentById(R.id.fragment_drawer);
 
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
+
 
 
     }
@@ -39,6 +45,31 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerC
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
+
+        switch (position)
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+
+                intent = new Intent(MainActivity.this, NotesListActivity.class);
+                startActivity(intent);
+                finish();
+               /* fragment = new NotesFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, fragment)
+                        .commit();*/
+
+                break;
+
+        }
         Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
     }
 
@@ -59,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerC
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
             getMenuInflater().inflate(R.menu.main, menu);
+
+
             return true;
         }
         return super.onCreateOptionsMenu(menu);

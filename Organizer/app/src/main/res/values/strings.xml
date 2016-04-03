@@ -6,11 +6,21 @@
     <string name="openCamera">Open Camera</string>
 
 
-   <!-- Error Toasts-->
+    <!-- Navigation drawer menu-->
+    <string name="todo">ToDo</string>
+    <string name="remind_me">Remind Me</string>
+    <string name="schedule">Schedule</string>
+    <string name="alarm">Alarm</string>
+    <string name="notes">Notes</string>
+
+    <!-- Error Toasts-->
     <string name="error_creds_empty">Please enter login and password</string>
     <string name="error_no_account">Do not have an account yet? Signup!</string>
     <string name="error_invalid_username">The user name entered is incorrect</string>
     <string name="error_invalid_password">Invalid password ! Please try again</string>
     <string name="error_empty_fields">Please enter all the fields</string>
     <string name="error_ummatched_password">The entered password does not match the confirm password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

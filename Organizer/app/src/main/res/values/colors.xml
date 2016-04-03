@@ -5,7 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="dark">#FF222222</color>
     <color name="light">#FFEEEEEE</color>
-
     <!--
         Check Android Theme colors for color reference:
         https://developer.android.com/training/material/images/ThemeColors.png
